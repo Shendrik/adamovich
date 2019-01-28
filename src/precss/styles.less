@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .row-flex();
     // background-color: #e0e3e5;
+    margin-top: -10px;
 }
 
 .wrap {
@@ -86,16 +87,18 @@ h1, h2, h3, h4, h5, h6 {
     // .col();
     .size(10);
     .size-md(8);
-    .size-xs(24);
+    // .size-xs(24);
+    padding-left: 0;
+    margin-left: @offset_one_side;
 }
 
 .content-right {
     // .col();
     .size(14);
     .size-md(16);
-    .size-xs(24);
-
-    
+    // .size-xs(24);
+    padding-right: 0;
+    margin-right: @offset_one_side;
 }
 
 .cont-text {
@@ -103,6 +106,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 50%;
     align-items: center;
     padding: 0 20px;
+    .md-block (
+        height: 100%;
+    ) 
 }
 
 .cont-text p {
@@ -137,6 +143,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 40px;
         border-radius: 15px;
         color: #ffffff;
+        cursor: pointer;
+        border: none;
+
 
     }
 }
@@ -186,3 +195,31 @@ padding: 20px;
 
 }
 
+footer {
+    background-color: #000;
+
+    .wrapper {
+        padding: 20px 0;
+        color: #ffffff;
+    }
+    ul {
+        display: flex;
+        padding: 0;
+    }
+    ul>li {
+        padding-right: 5px;
+        
+    }
+
+    ul>li>a {
+        display: flex;
+        padding: 0;
+    }
+
+    // .youtube {
+    //     width: 59px;
+    //     height: 59px;
+    //     background-image: url(/src/img/socicon.jpg);
+    //     // background-position: 0;
+    // }
+}
