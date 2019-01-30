@@ -152,7 +152,7 @@
                 <div class="wrap">  
                 <div class="image">
                 <img src="img/header.jpg" alt="Андрей Адамович">
-                <h2 class="visually-hidden">Адамович Андрей</h2>   
+                <h1 class="visually-hidden">Адамович Андрей</h1>   
              <!-- <img src="http://dummyimage.com/1280x500" alt="">  
              <img src="http://dummyimage.com/1280x500" alt="">  -->
              
@@ -174,53 +174,39 @@
                   </div>
 
 
-                  <div class="content-right">
+                  <div class="content-right content-booking">
                    
-                    <div class="cont-text">
-                      <p>Этот семинар - Зерно.<br>
-                        Придут только те, у кого почва готова. 
-                        Мы выберем зерно, правильно посадим и обильём польём.
-                        Что вырастет из зерна - это тайна каждого и его буущее.</p>
-                        
-                      <p>А дальше все просто и сложно одновременно.
-                        Просто - потому, что знаешь, куда идти, а сложно - потому, что делаешь первые шаги.
-                        Первый месяц вы будете поддерживать и ободрять друг друга.
-                        А дальше рост зерна уже не остановить.</p>
-                        
-                      <p> Готовьтесь, будет интересно.
-                        Для каждого домашнее задание: перед семинаром утром пройти не меньше 1 км.
-                        
-                      </p>
-                    </div>
 
-                    <div class="cont-btn">
-                      <div>
-                        <p class="data">16 Февраля 10:00</p>
-                        <h3>Время менять жизнь</h3>
-                      
-                        <a href="/booking.html#booking" class="cd-popup-trigger">бронировать</a>
-                        <!-- <div class="cd-popup" role="alert">
-                          <div class="cd-popup-container">
-                          	<form class="form-send">
-                              
-                              <input type="hidden" name="project_name" value="Site Name">
-                              <input type="hidden" name="admin_email" value="sh3ndrik@gmail.com">
-                              <input type="hidden" name="form_subject" value="Form Subject">
-                              
-                            
-                              <input type="text" name="Name" placeholder="Ваше ФИО" required><br>
-                              <input type="text" name="E-mail" placeholder="Ваш E-mail" required><br>
-                              <input type="text" name="Phone" placeholder="Ваш номер телефона"><br>
-                              
-                              <button class="btn">Отправить</button>
-                            
-                            </form>
-                            <a href="#0" class="cd-popup-close img-replace"></a>
-                          </div> 
-                        </div> cd-popup -->
-                        <p>Харьков,  Людмилы Гурченко, 1</p>
+                    <div id="booking" class="booking">
+                      <div class="book-text">
+                        <h3>БРОНИРОВАНИЕ</h3>
+                        <p>cеминар-практикум</p>
+                        <p>ЦЕЛИ</p>
+                        <div class="big-text">
+                        <p>осознание, постановка, достижение</p>
                       </div>
+                        <p>26 января <b>с</b> 10:00 <b>до</b> 12:00</p>
+                        <p>г. Харьков, ул. Людмилы Гурченко, 1</p>
+                        <p>стоимость 330.00 грн</p>
+                      </div>
+                      <form class="form-send">
+                          <!-- Hidden Required Fields -->
+                          <input type="hidden" name="project_name" value="adamovych.com">
+                          <input type="hidden" name="admin_email" value="andriy.adamovych@gmail.com">
+                          <input type="hidden" name="form_subject" value="Заявка на семинар-практикум ЦЕЛИ">
+                          <!-- END Hidden Required Fields -->
+                        
+                          <input type="text" name="ФИО" placeholder="Ваше ФИО" required><br>
+                          <input type="text" name="E-mail" placeholder="Ваш E-mail" required><br>
+                          <input type="text" name="Телефон" placeholder="Ваш номер телефона"><br>
+                          
+                          <button class="btn">Отправить</button>
+                        
+                      </form>
+                      <p>Нажимая на кнопку "отправить", Вы даете свое согласие на обработку персональных 
+                          данных</p>
                     </div>
+                   
   
                   </div>
                 </div>
@@ -249,16 +235,16 @@
   
                     <div class="content-right1 nex">
                       <div class="cont-text1">
-                          <p>Оглядываясь назад, <br>
-                            диву даешься, сколько глупостей и ошибок я совершил.<br>
-                            Но я не останавливался и шел дальше.<br>
-                            Получил два образования - ХАИ по экономике и МВА в Германии.<br>
-                            Прошел путь от продавца - консультанта до главы представительства в Москве.<br> 
-                            Был кандидатом в депутаты Верховного Совета Украины.<br>
-                            Потом решил поработать на себя и организовал несколько бизнесов.
-                            Пришло время поделиться опытом.
-                            Что я и делаю.
-                            </p>
+                       <p>Оглядываясь назад, <br>
+                      диву даешься, сколько глупостей и ошибок я совершил.<br>
+                      Но я не останавливался и шел дальше.<br>
+                      Получил два образования - ХАИ по экономике и МВА в Германии.<br>
+                      Прошел путь от продавца - консультанта до главы представительства в Москве.<br> 
+                      Был кандидатом в депутаты Верховного Совета Украины.<br>
+                      Потом решил поработать на себя и организовал несколько бизнесов.
+                      Пришло время поделиться опытом.
+                      Что я и делаю.
+                      </p>
                       </div>
   
                       
@@ -289,9 +275,52 @@
         <!-- <script src="/libs/owl-carousel/owl.carousel.min.js"></script> -->
         <script src="/js/main.js"></script>
         
-   
+        <script>
+            $(document).ready(function() {
+  
+            //E-mail Ajax Send
+            $("form").submit(function() { //Change
+              var th = $(this);
+              $.ajax({
+                type: "POST",
+                url: "mail.php", //Change
+                data: th.serialize()
+              }).done(function() {
+                alert("Спасибо! Ваша заявка принята");
+                setTimeout(function() {
+                  // Done Functions
+                  th.trigger("reset");
+                }, 1000);
+              });
+              return false;
+            });
+  
+            });
+          </script> 
 
-       
+        <!-- <script>
+                  jQuery(document).ready(function($){
+            
+            $('.cd-popup-trigger').on('click', function(event){
+              event.preventDefault();
+              $('.cd-popup').addClass('is-visible');
+            });
+            
+            
+            $('.cd-popup').on('click', function(event){
+              if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+                event.preventDefault();
+                $(this).removeClass('is-visible');
+              }
+            });
+            
+            $(document).keyup(function(event){
+                if(event.which=='27'){
+                  $('.cd-popup').removeClass('is-visible');
+                }
+              });
+          });
+        </script> -->
 
 
            

@@ -124,7 +124,10 @@ h4 {
         padding-left: 10px;
         margin-right: @offset_one_side;
         // background-color: rgb(31, 190, 58);
-        .lg-block ({ margin-left: 5px; });
+        .lg-block ({ 
+            margin-left: 5px;
+            padding-left: 0;
+        });
     }
     
 }
@@ -164,6 +167,7 @@ h4 {
     margin-left: -10px;
     .lg-block({
         height: auto;
+        margin-left: 0;
     });
 }
 
@@ -267,6 +271,52 @@ padding: 20px;
 
 }
 
+
+.content-booking {
+    background-color: #ebeef0;
+}
+.booking {
+    text-align: center;
+    // border: 1px dotted #48525a;
+    height: 100%;
+    margin-top: 15px;
+    background-color: #ebeef0;
+
+    .lg-block ({ 
+        margin-bottom: 15px;
+        margin-top: -10px;
+     });
+}
+
+.booking p {
+    padding-bottom: -10px;
+    margin-top: 0;
+}
+
+.book-text p {
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.booking h3 {
+    font-size: 46px;
+    text-align: center;
+    color: #d62222;
+    
+}
+
+
+
+.big-text p {
+    // min-width: 100%;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+
+
 footer {
 
     
@@ -305,11 +355,11 @@ footer {
 }
 
 .form-send {
-    padding: 40px 0;
+    padding: 5px 0;
 
     input {
         box-sizing: border-box;
-        border: 2px double  #48525a;
+        border: 1px double  #48525a;
         margin-bottom: 20px;
         width: 90%;
         padding: 5px;
