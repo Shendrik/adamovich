@@ -111,7 +111,7 @@ h4 {
         margin-left: @offset_one_side;
         // padding-right: -15px;
         // .lg-block({padding-left: 0});
-        background-color: rgb(221, 39, 39);
+        // background-color: rgb(221, 39, 39);
     }
 
 
@@ -123,7 +123,8 @@ h4 {
         padding-right: 0;
         padding-left: 10px;
         margin-right: @offset_one_side;
-        background-color: rgb(31, 190, 58);
+        // background-color: rgb(31, 190, 58);
+        .lg-block ({ margin-left: 5px; });
     }
     
 }
@@ -142,7 +143,9 @@ h4 {
     .lg-block({height: auto;});
     align-items: center;
     padding: 0  0 0 20px;
-    // .lg-block (
+    .lg-block ({
+        padding-bottom:20px;
+    })
     //     height: 100%;
     // ) 
 }
@@ -159,10 +162,12 @@ h4 {
   
     height: 48.8%;
     margin-left: -10px;
-    .lg-block({height: auto;});
+    .lg-block({
+        height: auto;
+    });
 }
 
-.cont-btn div {
+.cont-btn>div {
 
     margin: auto;
     .lg-block({margin: 20px auto;});
@@ -173,6 +178,10 @@ h4 {
         color: #e20101;
         font-weight: 800;
         
+        .lg-block({
+            line-height: 1.0;
+            padding: 10px 0;
+        });
     }
 }
 
@@ -204,6 +213,25 @@ h4 {
 }
 
 }
+
+.content-right1 {
+
+background-image: url(../img/time.jpg);
+.col-padding();
+.size(14);
+.size-lg(24);
+// .size-xs(24);
+padding-right: 10px;
+padding-left: 0;
+// margin-right: @offset_one_side;
+// background-color: rgb(31, 190, 58);
+.lg-block ({ 
+    margin-left: 5px;
+    padding-right: 0;
+ });
+
+}
+
 
 // .princep {
 //     background-color: #48525a;
@@ -248,7 +276,7 @@ footer {
     .soc {
         .col-padding();
         .size(24);
-        // padding: 20px 0;
+        padding: 20px 0;
     }
   
     ul {
@@ -292,10 +320,31 @@ footer {
         color: #FFF;
         font-size: 26px;
         border-radius: 15px;
+        cursor: pointer;
     }
 }
 
+.left-text {
+    background-color: #48525a; 
+}
 
+.text-glav {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.text-glav p {
+    text-align: right;
+}
+
+.cont-text1 {
+    padding:20px;
+    color: #ffffff;
+}
+
+// .nex {
+//     padding-left: -10px;
+// }
 
 // Всплывающие окно
 .cd-popup-trigger {
