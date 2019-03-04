@@ -100,7 +100,7 @@ h4 {
 
     .content-left {
         
-        .size(10);
+        .size(12);
         .size-lg(24);  
         padding-left: 0;
         margin-left: @offset_one_side;
@@ -108,8 +108,11 @@ h4 {
             justify-content: center;
             display: flex;
         });
+        
        
     }
+
+    
 
 
     .content-right {
@@ -126,6 +129,35 @@ h4 {
     }
     
 }
+
+.seminars {
+    background-color: #fff;
+    // .row-flex();
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+     
+    justify-content: space-around;
+
+    .colons {
+        margin-bottom: 10px;
+        .col();
+        .size(8);
+        .size-md(8);
+        .size-sm(8);
+        .size-xs(20);
+        .size-xxs(20); 
+        margin: 50px 0;
+
+        img:hover {
+            // background: #fc0; /* Цвет фона */
+    // box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
+    // padding: 10px;
+        }
+    }
+}
+
 
 .content-booking {
     background-color: #ebeef0 !important; 
@@ -231,12 +263,19 @@ h4 {
 
 }
 
+.content-left1, .content-right1 {
+    border-top: 3px solid #fff;
+
+}
+
 .content-right1 {
 
 background-image: url(../img/time.jpg);
 .col-padding();
-.size(14);
+.size(12);
 .size-lg(24);
+display: flex;
+justify-content: center;
 // .size-xs(24);
 padding-right: 10px;
 padding-left: 0;
@@ -407,6 +446,7 @@ footer {
 
 .left-text {
     background-color: #48525a; 
+    border-top: 3px solid #fff;
 }
 
 .text-glav {
@@ -422,6 +462,30 @@ footer {
     padding-bottom: 40px;
 }
 
+.text-glav-index {
+    // padding: 20px;
+    color: #ffffff;
+    padding: 110px 30px;
+   
+}
+
+.text-glav-index p {
+    text-align: left;
+    line-height: 1.7;
+    padding-bottom: 40px;
+}
+
+.cont-text-index {
+    padding:110px 30px;
+    color: #ffffff;
+    
+}
+
+.cont-text-index p {
+    line-height: 1.9;
+    padding-bottom: 35px;
+}
+
 .cont-text1 {
     padding:20px;
     color: #ffffff;
@@ -433,20 +497,19 @@ footer {
     padding: 90px 10px;
 }
 
-// .nex {
-//     padding-left: -10px;
-// }
+
 
 // Всплывающие окно
 .cd-popup-trigger {
     display: block;
-    width: 350px;
+    // width: 350px;
     height: 50px;
     line-height: 50px;
     margin: auto auto;
     text-align: center;
     color: #FFF;
     font-size: 24px;
+    font
     // font-size: 1.875rem;
     font-weight: bold;
     // text-transform: uppercase;
