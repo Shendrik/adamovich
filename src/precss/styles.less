@@ -84,7 +84,9 @@ h4 {
    
 // }
 
-
+header {
+    margin-bottom: -7px;
+}
 
 
 .cont-banner-text {
@@ -101,9 +103,13 @@ h4 {
     .content-left {
         
         .size(12);
-        .size-lg(24);  
+        .size-lg(12);
+        .size-md(12);
+        .size-sm(24);
+
         padding-left: 0;
         margin-left: @offset_one_side;
+        background-color: #6b7a86;
         .lg-block ({
             justify-content: center;
             display: flex;
@@ -160,7 +166,9 @@ h4 {
 
 .seminar {
     background-color: #FFF;
-    padding: 0 30px;
+    padding: 50px 50px;
+    
+
     p{
         padding: 10px 0;
     }
@@ -169,16 +177,23 @@ h4 {
     }
 
     
+    .seminar-btn{
+        display: flex;
+        justify-content: center;
 
+    }
 .myButton {
-	
+
+    margin: 30px 0;
+    
+    
 	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
-	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background:linear-gradient(to bottom, #02bfc8 5%, #02bfc8 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
 	background-color:#79bbff;
 	border-radius:6px;
 	border:1px solid #84bbf3;
-	display:inline-block;
+    display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -198,10 +213,6 @@ h4 {
 	top:1px;
 }
 
-}
-
-.content-booking {
-    background-color: #ebeef0 !important; 
 }
 
 
@@ -310,11 +321,12 @@ h4 {
 }
 
 .content-right1 {
-
-background-image: url(../img/time.jpg);
+background-color: #aeaeaf;
 .col-padding();
 .size(12);
-.size-lg(24);
+.size-lg(12);
+.size-md(12);
+.size-sm(24);
 display: flex;
 justify-content: center;
 // .size-xs(24);
@@ -322,41 +334,17 @@ padding-right: 10px;
 padding-left: 0;
 // margin-right: @offset_one_side;
 // background-color: rgb(31, 190, 58);
-.lg-block ({ 
+.sm-block ({ 
     margin-left: 5px;
     padding-right: 0;
  });
 
 }
 
+.nex {
+    background-image: url(../img/time.jpg);
+}
 
-// .princep {
-//     background-color: #48525a;
-//     color: #ffffff;
-//     padding-top: 20px;
-//     // padding-left: 20px;
-
-// }
-
-
-// .princep div {
-//     padding-right: 20px;
-// }
-
-
-// .princep p {
-
-//     padding-bottom: 20px;
-//     text-align: right
-// }
-
-// .time {
-//     display: flex;
-//     color: #ffffff;
-    
-//     background-image: url(../img/time.jpg) ;
-//     line-height: 1.5;
-// }
 
 .time p {
 
@@ -366,19 +354,43 @@ padding: 20px;
 
 
 .content-booking {
-    background-color: #ebeef0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
 }
 .booking {
+    border: 1px solid #b4b9bd;
     text-align: center;
-    // border: 1px dotted #48525a;
+    width: 60%;
     height: 100%;
-    margin-top: 15px;
-    background-color: #ebeef0;
+    margin: 50px 0;
+    background-color: #f1f7fb;
+    padding: 50px 25px;
 
     .lg-block ({ 
         margin-bottom: 15px;
-        margin-top: -10px;
+        // margin-top: -10px;
      });
+
+     .md-block ({
+        width: 100%;
+        border: none;
+        margin: 0 0;
+
+     });
+
+     .time-life {
+         color: rgb(255, 0, 0);
+         font-size: 40px;
+         font-weight: 800;
+
+         .md-block ({
+            font-size: 30px;
+            line-height: 1.2;
+    
+         });
+         
+     }
 }
 
 .booking p {
@@ -401,7 +413,16 @@ padding: 20px;
         font-family: 'Raleway-light', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    .md-block ({
+        font-size: 18px;
+
+     });
     }
+
+    .md-block ({
+        font-size: 20px;
+
+     });
 }
 
 
@@ -482,6 +503,10 @@ footer {
         font-size: 30px;
         border-radius: 15px;
         cursor: pointer;
+
+        .xs-block ({
+            font-size: 20px;
+        })
     }
 }
 
@@ -495,6 +520,9 @@ footer {
     color: #ffffff;
     padding: 110px 30px;
     color: #fff;
+    .sm-block ({
+        padding: 60px 30px;
+    })
 }
 
 .text-glav p {
@@ -507,6 +535,9 @@ footer {
     // padding: 20px;
     color: #ffffff;
     padding: 110px 30px;
+    .sm-block ({
+        padding: 60px 30px;
+    })
    
 }
 
@@ -519,6 +550,11 @@ footer {
 .cont-text-index {
     padding:110px 30px;
     color: #ffffff;
+    .sm-block ({
+        padding: 60px 30px;
+    })
+    
+
     
 }
 
@@ -672,3 +708,4 @@ footer {
   
     transform: translateY(0);
   }
+
